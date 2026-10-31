@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OrdeNotes · Tool Cosoft</title>
+<style>
+  :root{color-scheme:light dark;--bg:#f4f6fa;--panel:#fff;--ink:#17233f;--muted:#5b6b86;--line:#dbe3f0;--eq:#2e6bff}
+  @media (prefers-color-scheme:dark){:root{--bg:#0e1422;--panel:#151f33;--ink:#eef3ff;--muted:#a7b4cc;--line:#2a3852}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:48px 20px 72px}
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+  .logo{width:58px;height:58px;border-radius:15px;background:linear-gradient(160deg,#5eb2ff,#1e4dff);display:grid;place-items:center;color:#fff;font-weight:800;font-size:26px;box-shadow:0 10px 30px rgba(46,107,255,.28)}
+  h1{font-size:2rem;line-height:1.15;margin:0}
+  h2{font-size:1.15rem;margin:30px 0 8px}
+  p,li{color:var(--muted)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;margin:18px 0}
+  a{color:var(--eq)}
+  .pill{display:inline-block;background:color-mix(in srgb,var(--eq) 12%,var(--panel));color:var(--eq);border-radius:999px;padding:4px 12px;font-size:.82rem;font-weight:700}
+  footer{color:var(--muted);font-size:.85rem;margin-top:36px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="logo" aria-hidden="true">N</div>
+    <div>
+      <span class="pill">Android · Tool Cosoft</span>
+      <h1>OrdeNotes</h1>
+    </div>
+  </div>
+
+  <div class="card">
+    <p><strong>OrdeNotes</strong> es una app Android para escribir, organizar y respaldar notas con formato, tareas, coordenadas, tablas, imágenes, audio y documentos.</p>
+    <p>Las notas se guardan en el teléfono. De forma opcional, puedes conectar tu cuenta de Google para sincronizarlas en una carpeta de tu propio Google Drive.</p>
+  </div>
+
+  <h2>Google Drive</h2>
+  <p>La sincronización usa el permiso <code>drive.file</code>: solo permite crear y modificar los archivos que la propia app crea en tu Drive. No se pide acceso a todo tu Drive.</p>
+  <ul>
+    <li>Cada nota se guarda como un archivo independiente en la carpeta <strong>OrdeNotes</strong>.</li>
+    <li>Solo se sube la nota que cambió, no toda la biblioteca.</li>
+    <li>Si una nota cambió en dos dispositivos, la app pregunta qué versión conservar.</li>
+    <li>Las notas no pasan por servidores de Tool Cosoft.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>Consulta la <a href="./privacy.html">Política de Privacidad</a> para saber qué datos se usan, dónde se guardan y cómo borrarlos.</p>
+
+  <h2>Soporte</h2>
+  <p>Para dudas o para ejercer tus derechos sobre tus datos, escribe a <a href="mailto:contacto@toolcosoft.com">contacto@toolcosoft.com</a>.</p>
+
+  <footer>© 2026 Tool Cosoft · OrdeNotes. Google Drive es un servicio de Google LLC. OrdeNotes no está afiliada a Google.</footer>
+</main>
+</body>
+</html>

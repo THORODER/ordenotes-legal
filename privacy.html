@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de Privacidad · OrdeNotes</title>
+<style>
+  :root{color-scheme:light dark;--bg:#f4f6fa;--panel:#fff;--ink:#17233f;--muted:#5b6b86;--line:#dbe3f0;--eq:#2e6bff}
+  @media (prefers-color-scheme:dark){:root{--bg:#0e1422;--panel:#151f33;--ink:#eef3ff;--muted:#a7b4cc;--line:#2a3852}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:820px;margin:0 auto;padding:44px 20px 72px}
+  h1{font-size:1.9rem;line-height:1.2;margin:0 0 6px}
+  h2{font-size:1.12rem;margin:30px 0 8px}
+  p,li{color:var(--muted)}
+  a{color:var(--eq)}
+  .meta{font-size:.86rem;color:var(--muted);margin-bottom:26px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;margin:18px 0}
+  code{font-family:ui-monospace,Consolas,monospace;font-size:.9em}
+  footer{color:var(--muted);font-size:.85rem;margin-top:36px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidad de OrdeNotes</h1>
+  <div class="meta">Vigente desde el 31 de octubre de 2026 · Tool Cosoft</div>
+
+  <div class="card">
+    <p>Esta política explica cómo <strong>OrdeNotes</strong> (“la app”) accede, usa, guarda y comparte información, incluida la información obtenida de las API de Google.</p>
+  </div>
+
+  <h2>1. Responsable</h2>
+  <p>Tool Cosoft es el responsable de la app. Contacto: <a href="mailto:contacto@toolcosoft.com">contacto@toolcosoft.com</a>.</p>
+
+  <h2>2. Qué datos usa la app</h2>
+  <ul>
+    <li><strong>Notas:</strong> título, texto, formato, categorías, favoritos, fechas de creación y edición.</li>
+    <li><strong>Archivos adjuntos:</strong> imágenes, audio, documentos y otros archivos que el usuario agregue.</li>
+    <li><strong>Cuenta de Google (opcional):</strong> correo, nombre y foto de perfil que Google entrega al autorizar Google Drive.</li>
+    <li><strong>Datos técnicos:</strong> estado de la sincronización, identificadores de archivos de Drive y un identificador anónimo del dispositivo para resolver conflictos.</li>
+  </ul>
+
+  <h2>3. Dónde se guardan</h2>
+  <ul>
+    <li><strong>En el teléfono:</strong> las notas y sus archivos se guardan en el almacenamiento privado de la app.</li>
+    <li><strong>En Google Drive (opcional):</strong> si el usuario conecta su cuenta, se crea una carpeta llamada <strong>OrdeNotes</strong> dentro de su propio Drive y se guardan allí los archivos de sincronización.</li>
+    <li><strong>No hay servidores de Tool Cosoft:</strong> la app no envía las notas a un servidor propio ni a un servicio de nube de Tool Cosoft.</li>
+  </ul>
+
+  <h2>4. Para qué se usan</h2>
+  <ul>
+    <li>Mostrar, editar, buscar y organizar las notas.</li>
+    <li>Crear copias locales y exportarlas o importarlas a petición del usuario.</li>
+    <li>Sincronizar las notas entre dispositivos a través de la cuenta de Google del usuario, cuando el usuario lo autoriza.</li>
+    <li>Resolver conflictos y avisar cuando una nota cambió en dos lugares.</li>
+  </ul>
+  <p>No se usan para publicidad, elaboración de perfiles, venta de datos ni entrenamiento de modelos.</p>
+
+  <h2>5. Google Drive y permisos</h2>
+  <p>La app solicita el permiso <code>https://www.googleapis.com/auth/drive.file</code>. Este permiso permite crear y modificar únicamente archivos que la app crea o que el usuario le comparte; no da acceso a todo el Drive.</p>
+  <p>También puede solicitar los permisos básicos de correo y perfil (<code>userinfo.email</code> y <code>userinfo.profile</code>) para mostrar qué cuenta está conectada.</p>
+
+  <h2>6. Uso limitado de datos de Google</h2>
+  <p>El uso que OrdeNotes hace de la información recibida de las API de Google cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Datos de Usuarios de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+  <p>En particular:</p>
+  <ul>
+    <li>Los datos de Google solo se usan para prestar o mejorar la sincronización solicitada por el usuario.</li>
+    <li>No se venden, alquilan ni comparten con terceros para publicidad o fines ajenos.</li>
+    <li>No se usan para crear perfiles publicitarios ni para entrenar modelos de inteligencia artificial.</li>
+    <li>Solo se accede a los archivos que la app crea en la carpeta <strong>OrdeNotes</strong>.</li>
+  </ul>
+
+  <h2>7. Con quién se comparte</h2>
+  <p>Tool Cosoft no comparte las notas con terceros. La sincronización se hace directamente entre el dispositivo y la cuenta de Google del usuario. Google procesa los datos conforme a sus propias políticas.</p>
+  <p>El usuario puede compartir una nota o una copia de seguridad usando las funciones del sistema (por ejemplo, la hoja de compartir de Android). En ese caso, el destinatario y el servicio elegido quedan fuera del control de la app.</p>
+
+  <h2>8. Seguridad</h2>
+  <ul>
+    <li>La comunicación con Google se hace por HTTPS.</li>
+    <li>El token de acceso de Google se mantiene en memoria y no se guarda en el almacenamiento de la app.</li>
+    <li>La app no incluye contraseñas ni claves secretas de Google.</li>
+    <li>Las notas de la zona privada (Notas B) se guardan cifradas en el teléfono y no se envían a Google Drive.</li>
+    <li>Las notas normales (Notas A) se guardan en claro dentro de la carpeta privada de Drive del usuario. Quien tenga acceso a la cuenta de Google puede leerlas.</li>
+  </ul>
+
+  <h2>9. Conservación y borrado</h2>
+  <ul>
+    <li>Las notas se conservan en el teléfono hasta que el usuario las borra o desinstala la app.</li>
+    <li>La papelera de Notas A conserva las notas borradas hasta 30 días o 100 notas, según corresponda.</li>
+    <li>En Drive, los archivos permanecen hasta que el usuario los borra desde la app, desde Google Drive o al desconectar/revocar el acceso.</li>
+    <li>El usuario puede revocar el acceso de la app desde <a href="https://myaccount.google.com/permissions" rel="noopener">la configuración de su cuenta de Google</a>.</li>
+    <li>Para solicitar el borrado de datos tratados por Tool Cosoft, escribe a <a href="mailto:contacto@toolcosoft.com">contacto@toolcosoft.com</a>.</li>
+  </ul>
+
+  <h2>10. Menores</h2>
+  <p>La app no está dirigida a menores de 13 años y no recopila conscientemente datos de menores.</p>
+
+  <h2>11. Cambios</h2>
+  <p>Si esta política cambia, se actualizará esta página y la fecha de vigencia. Los cambios importantes se avisarán en la app o en la ficha de la aplicación.</p>
+
+  <h2>12. Contacto</h2>
+  <p>Tool Cosoft · <a href="mailto:contacto@toolcosoft.com">contacto@toolcosoft.com</a></p>
+
+  <footer>© 2026 Tool Cosoft · OrdeNotes. Google Drive es un servicio de Google LLC. OrdeNotes no está afiliada a Google.</footer>
+</main>
+</body>
+</html>
